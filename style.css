@@ -1,0 +1,571 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+nav{
+	width: 100%;
+	overflow: hidden;
+}
+
+.navbar-brand{
+	float: left;
+	line-height: 3em;
+	margin: 1% 0 1% 1%;
+	text-decoration: none;
+	color: black;
+}
+
+#menu{
+	float: right;
+	line-height: 3em;
+	margin: 1% 1% 1% 0;
+	width: 70%;
+}
+
+#menu ul{
+	text-align: right;
+	list-style-type: none;
+	width: 100%;
+}
+
+#menu li{
+	display: inline-block;
+	line-height: 3em;
+	cursor: pointer;
+	text-align: center;
+}
+
+#menu li a{
+	text-decoration: none;
+	color: blue;
+	line-height: 3em;
+	text-align: center;
+	padding: 2px 25px;
+	border-radius: 5px;
+}
+
+#menu li a:hover{
+	background-color: gainsboro;
+}
+
+.jumbotron{
+	width: 98%;
+	margin: 0 auto;
+	height: 20em;
+	background:url(main.jpg) center no-repeat;
+	background-size: cover;
+	border: 5px solid white;
+	color: white;
+	outline: 1px solid gray;
+}
+
+.jumbotron h1{		
+	vertical-align: center;
+	margin-left: 5%;
+	line-height: 8.5em;
+}
+
+.jumbotron .submit{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.jumbotron .submit a{
+	display: block;
+	width: 20%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 2em;
+	color: white;
+	background: linear-gradient(to bottom right, darkblue, lightblue);
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: .8;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid white;
+}
+
+.jumbotron .submit a:hover{
+	opacity: 1;
+}
+
+.py-4{
+	width: 100%;
+	overflow: hidden;
+}
+
+.py-4 ul{
+	margin-top: 1em;
+	list-style-type: none;
+	width: 100%;
+}
+
+.py-4 li{
+	display: inline;
+	font-size: 2em;
+}
+
+.py-4 a{
+	text-decoration: none;
+	color: blue;
+	padding: 0 30px;
+	border-left: 1px dotted white;
+	border-top: 1px dotted white;
+	border-right: 1px dotted white;
+}
+
+.py-4 a.active{
+	color: black;
+	border-left: 1px dotted gray;
+	border-top: 1px dotted gray;
+	border-right: 1px dotted gray;
+	border-bottom: 1px solid white;
+}
+
+.py-5{		
+	overflow: hidden;
+	background-color: gainsboro;
+}
+
+.tab-content{
+	border-top: 1px dotted grey;
+	width: 100%;
+	padding: 2% 0;
+	margin-left: 1%
+}
+
+.table{
+	width: 100%;
+}
+
+table{
+	width: 50%;
+	margin: 2% auto;
+	float: left;
+	text-align: center;
+}
+
+section.text-div{
+	width: 100%;
+	margin: 2% 0 0;
+}
+
+section.text-div h2{
+	line-height: 3em;
+	padding-left: 2%;
+}
+
+section.text-div .container{
+	border-top: 1px dotted grey;
+	padding-left: 2%;
+}
+
+section.text-div .container h3{
+	padding: 1% 0;
+}
+
+#contact{
+	width: 50%;
+	margin: 1% auto;
+}
+
+#contact section{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 1%;
+}
+
+#contact label{
+	width: 20%;
+	text-align: right;
+	float: left;
+	font-size: 1.2em;
+	line-height: 2em;
+}
+
+#contact input, textarea{
+	margin-right: 1%;
+	width: 70%;
+	float: right;
+	font-size: 1.2em;
+	line-height: 2em;
+	border-radius: 5px;
+}
+
+#contact .submit{
+	width: 40%;
+	margin: 0 auto;
+}
+
+#contact .submit button{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 2em;
+	color: white;
+	background: linear-gradient(to bottom right, darkblue, lightblue);
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: .8;
+}
+
+#contact .submit button:hover{
+	opacity: 1;
+}
+
+footer{
+	background-color: rgb(19, 32, 32);
+	color: white;
+	height: 10em;
+	clear: both;
+	line-height: 2em;
+}
+
+footer div.copyright{
+	margin-left: 1%;
+	float: left;
+}
+
+footer ul.footer-menu{
+	float: right;
+	list-style-type: none;
+	text-align: right;
+}
+
+footer .footer-menu li{
+	display: inline;
+	border-right: 1px dotted white;
+}
+
+footer .footer-menu li:last-child{
+	border-right: none;
+}
+
+.footer-menu li a{
+	color: white;
+	text-decoration: none;
+	padding: 0 30px;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+	opacity: 0.7;
+}
+
+#myBtn:hover {
+    background-color: #333;
+	opacity: 1;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	
+	body{
+		max-width: 1080px;
+	}
+	
+	.navbar-brand{
+		line-height: 2.5em;
+	}
+	
+	#menu{
+		line-height: 2.5em;
+	}
+	
+	#menu li{
+		line-height: 2.5em;
+	}
+	
+	#menu li a{
+		line-height: 2.5em;
+	}
+	
+	.jumbotron{
+		height: 17em;
+	}
+
+	.jumbotron h1{		
+		line-height: 7em;
+	}
+
+	.jumbotron .submit a{
+		font-size: 1.2em;
+		line-height: 2em;
+		border-radius: 10px;
+	}
+
+	.py-4 ul{
+		margin-top: 0.7em;
+	}
+
+	.py-4 li{
+		font-size: 1.4em;
+	}
+
+	section.text-div h2{
+		line-height: 2.5em;
+	}
+
+	#contact label{
+		width: 20%;
+		text-align: right;
+		float: left;
+		font-size: 1.2em;
+		line-height: 2em;
+	}
+
+	#contact input, textarea{
+		margin-right: 1%;
+		width: 70%;
+		float: right;
+		font-size: 1.2em;
+		line-height: 2em;
+		border-radius: 5px;
+	}
+
+	footer{
+		height: 10em;
+		line-height: 2em;
+	}
+
+	#myBtn {
+		bottom: 15px;
+		right: 20px;
+		padding: 10px 14px;
+		border-radius: 10px;
+		font-size: 1.2em;
+		opacity: 0.7;
+	}
+
+	#myBtn:hover {
+		background-color: #333;
+		opacity: 1;
+	}
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	
+	body{
+		max-width: 991px;
+	}
+	
+	.navbar-brand{
+		line-height: 2em;
+	}
+	
+	#menu{
+		line-height: 2em;
+	}
+	
+	#menu li{
+		line-height: 2em;
+	}
+	
+	#menu li a{
+		line-height: 2em;
+	}
+	
+	.jumbotron{
+		height: 15em;
+	}
+
+	.jumbotron h1{		
+		line-height: 6em;
+	}
+
+	.jumbotron .submit a{
+		font-size: 1.2em;
+		line-height: 2em;
+		border-radius: 10px;
+	}
+
+	.py-4 ul{
+		margin-top: 0.7em;
+	}
+
+	.py-4 li{
+		font-size: 1.2em;
+	}
+
+	section.text-div h2{
+		line-height: 2em;
+	}
+
+	#contact label{
+		width: 20%;
+		text-align: right;
+		float: left;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	#contact input, textarea{
+		margin-right: 1%;
+		width: 70%;
+		float: right;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		border-radius: 5px;
+	}
+
+	footer{
+		height: 10em;
+		line-height: 2em;
+	}
+
+	#myBtn {
+		bottom: 15px;
+		right: 20px;
+		padding: 10px 14px;
+		border-radius: 10px;
+		font-size: 1.2em;
+		opacity: 0.7;
+	}
+
+	#myBtn:hover {
+		background-color: #333;
+		opacity: 1;
+	}
+	
+}
+
+@media screen and (max-width: 767px){
+	
+	body{
+		max-width: 767px;
+	}
+	
+	.navbar-brand{
+		line-height: 3em;
+		width: 100%;
+		clear: both;
+		text-align: center;
+	}
+	
+	#menu{
+		line-height: 3em;
+		width: 100%;
+		clear: both;
+	}
+	
+	#menu ul{
+		text-align: center;
+	}	
+	
+	#menu li{
+		line-height: 3em;
+	}
+	
+	#menu li a{
+		line-height: 3em;
+	}
+	
+	.jumbotron{
+		height: 15em;
+	}
+
+	.jumbotron h1{
+		font-size: 1.5em;
+		line-height: 8em;
+	}
+
+	.jumbotron .submit a{
+		font-size: 1em;
+		line-height: 2em;
+		border-radius: 10px;
+		width: 30%;
+	}
+
+	.py-4 ul{
+		margin-top: 0.7em;
+	}
+
+	.py-4 li{
+		font-size: 1.2em;
+	}
+
+	section.text-div h2{
+		line-height: 2em;
+	}
+	
+	#contact{
+		width: 70%;
+	}
+
+	#contact label{
+		width: 20%;
+		text-align: right;
+		float: left;
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	#contact input, textarea{
+		margin-right: 1%;
+		width: 70%;
+		float: right;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		border-radius: 5px;
+	}
+
+	footer{
+		height: 10em;
+		line-height: 2em;
+	}
+	
+	footer ul.footer-menu{
+		width: 95%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	footer div.copyright{
+		width: 100%;
+		text-align:center;
+		margin-left: 0;
+		margin-top: 6em;
+		font-size: .8em;
+	}
+
+	#myBtn {
+		bottom: 15px;
+		right: 20px;
+		padding: 10px 14px;
+		border-radius: 10px;
+		font-size: 1.2em;
+		opacity: 0.7;
+	}
+
+	#myBtn:hover {
+		background-color: #333;
+		opacity: 1;
+	}
+	
+}
